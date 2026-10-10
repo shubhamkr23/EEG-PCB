@@ -83,20 +83,6 @@ These techniques will help me understand the acquired signals and explore their 
 - **Machine Learning:** Feature extraction and EEG classification
 - **Programming:** C/C++ and Python
 
-## Current Progress
-
-- [x] Hardware architecture and component selection
-- [x] Initial schematic and PCB design
-- [ ] PCB fabrication and assembly
-- [ ] Power supply and hardware verification
-- [ ] ADS1299 communication and configuration
-- [ ] Multichannel signal acquisition and validation
-- [ ] EEG data visualization
-- [ ] Signal-processing pipeline
-- [ ] EEG feature extraction and classification
-
-I'll update this section as the project progresses and each stage is tested.
-
 ## Motivation
 
 I'm interested in the intersection of electronics, neuroscience, and artificial intelligence. This project gives me an opportunity to work on a real hardware system while learning about neural signals, low-noise circuit design, embedded programming, and machine learning.
