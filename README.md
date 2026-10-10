@@ -1,3 +1,4 @@
+<img width="4080" height="3060" alt="WhatsApp Image 2026-09-14 at 21 59 07" src="https://github.com/user-attachments/assets/9e2dcb0b-11a9-4075-9a0b-3012a2309232" />
 # EEG-Based Brain–Computer Interface (BCI)
 
 ### Designing an 8-Channel EEG Acquisition System Using ADS1299 and ESP32
