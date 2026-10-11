@@ -1,10 +1,6 @@
 #include <Arduino.h>
 #include <SPI.h>
 
-// ============================================================
-// ESP32 <-> ADS1299
-// ============================================================
-
 #define ADS_CS      5
 #define ADS_DRDY    4
 #define ADS_START   27
@@ -17,13 +13,7 @@
 
 SPIClass adsSPI(VSPI);
 
-// ADS1299 SPI speed
-// MODE1 is required by ADS1299
 #define ADS_SPI_SPEED 2000000
-
-// ============================================================
-// ADS1299 COMMANDS
-// ============================================================
 
 #define CMD_WAKEUP  0x02
 #define CMD_STANDBY 0x04
@@ -66,11 +56,7 @@ SPIClass adsSPI(VSPI);
 #define REG_MISC2       0x16
 #define REG_CONFIG4     0x17
 
-// ============================================================
-// ADS1299 SETTINGS
-// ============================================================
 
-// ADS1299 internal reference is approximately 4.5 V
 const float VREF = 4.5;
 
 // Gain = 24
@@ -84,18 +70,12 @@ const float GAIN = 24.0;
 
 volatile bool dataReady = false;
 
-// ============================================================
-// DRDY INTERRUPT
-// ============================================================
 
 void IRAM_ATTR adsDRDY_ISR()
 {
     dataReady = true;
 }
 
-// ============================================================
-// SPI COMMAND
-// ============================================================
 
 void adsCommand(uint8_t command)
 {
